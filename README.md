@@ -1,98 +1,84 @@
-♻️ ReGen - The Smart Recycling Assistant
-ReGen is a mobile application built with React Native that helps users make eco-friendly decisions. By simply scanning an item, users receive AI-powered advice on the most sustainable disposal methods, including recycling, upcycling, and composting. The app uses a gamified approach with points and badges to encourage consistent, positive environmental impact.
+# ♻️ ReGen - The Smart Recycling Assistant
 
-✨ Features
-📷 Item Scanning: Use your device's camera or upload an image to scan any item.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![React Native](https://img.shields.io/badge/React_Native-0.71.11-blue.svg)](https://reactnative.dev/)
+[![Expo](https://img.shields.io/badge/Expo-Managed-yellow.svg)](https://expo.dev/)
 
-🤖 AI Analysis: Leverages the Google Gemini API to identify the item and its material.
+ReGen is a **mobile application** built with React Native that helps users make **eco-friendly decisions**. By scanning an item, users receive **AI-powered advice** on the most sustainable disposal methods, including **recycling, upcycling, and composting**.  
+The app uses a **gamified approach** with points and badges to encourage consistent, positive environmental impact.
 
-🌿 Sustainable Advice: Provides clear, actionable instructions on how to dispose of the item responsibly.
+---
 
-💡 Creative Ideas: Suggests upcycling ideas and eco-friendly alternatives.
+## ✨ Features
 
-🏆 Gamification: Earn "Eco-Points" for each scan and unlock badges as you reach milestones.
+| Feature | Description |
+|---------|-------------|
+| 📷 **Item Scanning** | Use your camera or upload an image to scan items. |
+| 🤖 **AI Analysis** | Uses Google Gemini API to identify the item and its material. |
+| 🌿 **Sustainable Advice** | Clear instructions for responsible disposal. |
+| 💡 **Creative Ideas** | Upcycling suggestions and eco-friendly alternatives. |
+| 🏆 **Gamification** | Earn Eco-Points and unlock badges for milestones. |
+| 👤 **User Profiles** | Track points, badges, and scan history. |
+| 🌗 **Light & Dark Mode** | Comfortable viewing in any lighting condition. |
 
-👤 User Profiles: Track your points, view unlocked badges, and see your scan history.
+---
 
-🌗 Light & Dark Mode: A comfortable viewing experience in any lighting condition.
+## 🔧 Tech Stack
 
-🔧 Tech Stack
-Framework: React Native (with Expo)
+- **Framework:** [React Native](https://reactnative.dev/) with [Expo](https://expo.dev/)
+- **Backend & Database:** [Supabase](https://supabase.com/)
+- **AI Engine:** [Google Gemini API](https://ai.google.com/)
 
-Backend & Database: Supabase for user authentication and data storage.
+---
 
-AI Engine: Google Gemini API for image analysis and content generation.
+## 🚀 Getting Started
 
-🚀 Getting Started
-To get a local copy up and running, follow these simple steps.
+Follow these steps to set up the project locally.
 
-Prerequisites
-Make sure you have the following installed on your machine:
+### Prerequisites
 
-Node.js (LTS version recommended)
+- [Node.js](https://nodejs.org/) (LTS version recommended)  
+- [Git](https://git-scm.com/)  
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
 
-Git
-
-Expo CLI:
-
-Bash
-
+Installation:
+```sh
 npm install -g expo-cli
-Installation & Setup
-Clone the repository:
-
-Bash
-
+# Clone the repo
 git clone https://github.com/amalshadin/re-gen.git
-Navigate to the project directory:
 
-Bash
-
+# Go to the project directory
 cd ReGen
-Install NPM packages:
 
-Bash
-
+# Install dependencies
 npm install
-Set up environment variables:
-Create a file named .env in the root of the project and add the necessary API keys and URLs. See the Environment Variables section below for details.
-
-Running the App
-Start the Metro bundler:
-
-Bash
-
-npx expo start
-Run on your device:
-Scan the QR code shown in the terminal with the Expo Go app on your Android or iOS device.
-
-🔑 Environment Variables
-To run this project, you will need to add the following environment variables to your .env file in the project root.
-
-Create a .env file and copy the contents of .env.example (if available) or use the template below:
-
+```
+Setup Environment Variables:
+```
+Create a .env file in the root and add:
 # Supabase
 SUPABASE_URL="YOUR_SUPABASE_URL"
 SUPABASE_ANON_KEY="YOUR_SUPABASE_ANON_KEY"
 
 # Google Gemini
 GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
-SUPABASE_URL & SUPABASE_ANON_KEY: Found in your Supabase project's API settings.
+```
+Running the App:
+```
+# Start Metro Bundler
+npx expo start
+```
+---
+## 🤝 Contributing
 
-GEMINI_API_KEY: Your API key from Google AI Studio.
+1. Contributions are welcome!
+2. Fork the project
+3. Create your feature branch (git checkout -b feature/AmazingFeature)
+4. Commit your changes (git commit -m 'Add some AmazingFeature')
+5. Push to the branch (git push origin feature/AmazingFeature)
+6. Open a Pull Request
+---
 
-🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+## 📄 License
 
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License. See LICENSE for details.
