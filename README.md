@@ -118,5 +118,5 @@ eas build --platform android --profile development
 
 ## 📄 License
 
-Distributed under the MIT License. See [License](./LICENSE.md)
+Distributed under the MIT License. See [License](./LICENSE)
  for details.
