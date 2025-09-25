@@ -52,6 +52,7 @@ cd ReGen
 
 # Install dependencies
 npm install
+
 ```
 Setup Environment Variables:
 ```
@@ -63,11 +64,47 @@ SUPABASE_ANON_KEY="YOUR_SUPABASE_ANON_KEY"
 # Google Gemini
 GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
 ```
+Install Additional Packages for imported Modules
+```
+npx expo install <package-name>
+```
 Running the App:
 ```
 # Start Metro Bundler
 npx expo start
 ```
+---
+
+## 🛠️Building Your App with EAS
+  1. Create an Expo account and login in.
+```
+# Login to expo account 
+  npx eas login
+```
+2. Configure the build files.
+```
+# Configure the build file (eas.json)
+eas build:configure
+# You may have to manually add the eas project id (recieved from expo via the terminal ) to the app.config.js as expo cannot automatically update the file.
+#ignore it if you're using environment key with app.json (not app.config.js).
+
+```
+3. Manage Secrets
+```
+# create new secrete (replace YOUR_SECRET_NAME with your key/url variable and your_secret_value with the actual key/url.
+npx eas secret:create --scope project --name YOUR_SECRET_NAME --value "your_secret_value"
+```
+4. Verify the secrets
+```
+npx eas secret:list
+```
+5. Build
+```
+# change pplatform name and build profile accordingly
+eas build --platform android --profile development
+```
+6. Scan the QR/ goto the link and download your app and install it.
+
 ---
 ## 🤝 Contributing
 
@@ -81,4 +118,5 @@ npx expo start
 
 ## 📄 License
 
-Distributed under the MIT License. See LICENSE for details.
+Distributed under the MIT License. See [License](./LICENSE.md)
+ for details.
